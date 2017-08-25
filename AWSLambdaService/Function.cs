@@ -19,9 +19,28 @@ namespace AWSLambdaService
         /// <param name="input"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public string FunctionHandler(string input, ILambdaContext context)
+        public async Task<int> FunctionHandler(string input, ILambdaContext context)
         {
-            return input?.ToUpper();
+            var task1 = opAsync1();
+            var task2 = opAsync2();
+            var task3 = opAsync3();
+            Task.WaitAll(new Task[] { task1, task2, task3 });
+            return await Task.FromResult(1);
+        }
+        public async Task<int> opAsync1()
+        {
+            await Task.Delay(500);
+            return 1;
+        }
+        public async Task<int> opAsync2()
+        {
+            await Task.Delay(1000);
+            return 1;
+        }
+        public async Task<int> opAsync3()
+        {
+            await Task.Delay(500);
+            return 1;
         }
     }
 }
