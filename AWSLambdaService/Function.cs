@@ -21,9 +21,15 @@ namespace AWSLambdaService
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            string cxt = $"ML: {context.MemoryLimitInMB}, FN: {context.FunctionName}, ARN: {context.InvokedFunctionArn}, RequestID: {context.AwsRequestId}, LogSN: {context.LogStreamName}, LogSNG: {context.LogGroupName}, RemainingTime: {context.RemainingTime}";
-            
-            return cxt;
+            try
+            {
+                throw new NullReferenceException("you need data");
+            }
+            catch (Exception ex)
+            {
+                context.Logger.LogLine(ex.Message);
+            }
+            return "";
         }
         
     }

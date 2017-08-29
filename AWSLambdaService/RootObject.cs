@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
+using Amazon.Lambda.Core;
 
 namespace AWSLambdaService
 {
@@ -10,5 +11,9 @@ namespace AWSLambdaService
         [JsonIgnore]
         public string twoValues => val1 + val2;
         public List<Student> StudentData { get; set; }
+        public static void ExampleLog()
+        {
+            LambdaLogger.Log("external class log");
+        }
     }
 }
