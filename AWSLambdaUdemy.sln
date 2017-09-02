@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallingFunction", "CallingF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDynamoDB", "LambdaDynamoDB\LambdaDynamoDB.csproj", "{E15C1B5D-510E-4598-9C57-43606DFFF087}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingDynamoEvent", "HandlingDynamoEvent\HandlingDynamoEvent.csproj", "{F9629ED3-8166-4228-B43F-1620FBED7679}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlingS3", "HandlingS3\HandlingS3.csproj", "{636409AF-BBAC-47DA-B574-FBED3F706259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{E15C1B5D-510E-4598-9C57-43606DFFF087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E15C1B5D-510E-4598-9C57-43606DFFF087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E15C1B5D-510E-4598-9C57-43606DFFF087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9629ED3-8166-4228-B43F-1620FBED7679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9629ED3-8166-4228-B43F-1620FBED7679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9629ED3-8166-4228-B43F-1620FBED7679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9629ED3-8166-4228-B43F-1620FBED7679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636409AF-BBAC-47DA-B574-FBED3F706259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636409AF-BBAC-47DA-B574-FBED3F706259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636409AF-BBAC-47DA-B574-FBED3F706259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636409AF-BBAC-47DA-B574-FBED3F706259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

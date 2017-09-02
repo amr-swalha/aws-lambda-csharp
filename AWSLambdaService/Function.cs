@@ -21,6 +21,7 @@ namespace AWSLambdaService
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
+            //context.Logger.LogLine("test");
             return input?.ToUpper();
         }
         
