@@ -21,15 +21,7 @@ namespace AWSLambdaService
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
-            try
-            {
-                throw new NullReferenceException("you need data");
-            }
-            catch (Exception ex)
-            {
-                context.Logger.LogLine(ex.Message);
-            }
-            return "";
+            return input?.ToUpper();
         }
         
     }
