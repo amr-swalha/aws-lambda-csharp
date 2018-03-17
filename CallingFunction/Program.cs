@@ -9,7 +9,7 @@ namespace CallingFunction
     {
         static void Main(string[] args)
         {
-            AmazonLambdaClient client = new AmazonLambdaClient("AKIAJJGACQB4JT7R7OIQ", "E6zyihePT9al+otXnfipXPC6r8nPwY+hGvbcnZPx", RegionEndpoint.USWest2);
+            AmazonLambdaClient client = new AmazonLambdaClient("Your Client ID", "Your Client Secert", RegionEndpoint.USWest2);
             InvokeRequest request = new InvokeRequest() { FunctionName="Udemy",Payload="\"test\""};
             InvokeResponse response = client.Invoke(request);
             if (response != null && response.StatusCode == 200)
